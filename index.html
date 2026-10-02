@@ -1,194 +1,361 @@
+<!-- DECLARACIÓN DEL TIPO DE DOCUMENTO: Indica que este es un archivo HTML5 -->
 <!DOCTYPE html>
+<!-- ETIQUETA HTML: Abre el documento HTML y define el idioma como inglés -->
 <html lang="en">
+<!-- SECCIÓN HEAD: Contiene información del documento que no se ve directamente en la página -->
 <head>
+<!-- CODIFICACIÓN DE CARACTERES: Define que se usará UTF-8 para mostrar caracteres especiales como ñ, á, é, etc. -->
 <meta charset="UTF-8">
+<!-- VIEWPORT PARA DISPOSITIVOS MÓVILES: Adapta la página a diferentes tamaños de pantalla (móviles, tablets, computadoras) -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- TÍTULO DE LA PÁGINA: El texto que aparece en la pestaña del navegador -->
 <title>Formularios en HTML</title>
+<!-- COMENTARIO: Nota de que se está incluyendo una librería externa de iconos -->
 <!-- Libreria de iconos en linea -->
 
+<!-- ENLACE A LIBRERÍA EXTERNA: Importa Font Awesome para usar iconos como aviones, basureros, etc. -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
 awesome/7.3.1/css/all.min.css">
 
+<!-- CIERRE DE LA SECCIÓN HEAD -->
 </head>
+<!-- SECCIÓN BODY: Contiene todo lo visible en la página web -->
 <body>
+<!-- ENCABEZADO PRINCIPAL: Título grande que aparece en la parte superior de la página -->
 <h1>Formularios</h1>
+<!-- PÁRRAFO 1: Explicación de qué es un formulario -->
 <p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
+<!-- PÁRRAFO 2: Aclaración de que HTML no guarda los datos, sino que los envía a un lenguaje del servidor -->
 <p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
 esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
 ASP, ASP.NET, Node, etc.)
 </p>
 
+<!-- COMENTARIO: Inicio de la primera sección de formularios -->
 <!-- EJEMPLO BÁSICO: Este bloque crea un formulario sencillo para capturar un nombre. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la primera sección -->
 <h2>Ejemplo basico</h2>
+<!-- ETIQUETA FORM: Abre un formulario con método POST que enviará los datos al mismo archivo -->
 <form action="" method="post">
+<!-- TEXTO: Etiqueta visible para el usuario indicando qué debe escribir -->
 Ingresa tu nombre:
+<!-- CAMPO DE TEXTO: Input donde el usuario escribe su nombre, con un ancho de 20 caracteres -->
 <input type="text" name="nombre" size="20">
+<!-- SALTO DE LÍNEA: Crea un espacio entre elementos para mejor visualización -->
 <br>
+<!-- BOTÓN DE ENVÍO: Botón que envía los datos del formulario al servidor -->
 <input type="submit" value="enviar">
+<!-- CIERRE DEL FORMULARIO: Termina la definición del primer formulario -->
 </form>
 
+<!-- COMENTARIO: Inicio de la segunda sección de formularios para autenticación -->
 <!-- FORMULARIO DE AUTENTICACIÓN: Se usan dos campos básicos para ingresar usuario y contraseña, y se valida con el servidor. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la segunda sección -->
 <h2>Formulario para contraseñas</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario con método POST -->
 <form action="" method="post">
 
+<!-- TEXTO: Etiqueta visible indicando que se ingrese un usuario -->
 Ingresa tu usuario:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre de usuario -->
 <input type="text" name="usuario">
+<!-- TEXTO: Etiqueta visible indicando que se ingrese una contraseña -->
 Ingresa tu contraseña:
+<!-- CAMPO DE CONTRASEÑA: Input que oculta lo que el usuario escribe (aparece en puntos o asteriscos) -->
 <input type="password" name="pass">
+<!-- SALTO DE LÍNEA: Espacio visual entre elementos -->
 <br>
+<!-- BOTÓN DE ENVÍO: Envía los datos del formulario -->
 <input type="submit" value="enviar">
+<!-- BOTÓN DE RESETEO: Limpia todos los campos del formulario dejándolos vacíos -->
 <input type="reset" value="borrar">
+<!-- CIERRE DEL FORMULARIO: Termina el formulario de contraseñas -->
 </form>
 
+<!-- COMENTARIO: Inicio de la tercera sección con campo textarea -->
 <!-- FORMULARIO CON TEXTAREA: Este control permite escribir comentarios largos en varias líneas. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la tercera sección -->
 <h2>Formulario con text area</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
+<!-- TEXTO: Etiqueta visible para ingresar nombre -->
 Ingresa tu nombre:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre -->
 <input type="text" name="nombre">
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- TEXTO: Etiqueta visible para ingresar correo -->
 Ingresa tu correo:
+<!-- CAMPO DE EMAIL: Input especial para direcciones de correo electrónico -->
 <input type="email" name="correo">
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- TEXTO: Etiqueta visible para escribir comentarios -->
 Ingresa tus comentarios:
+<!-- ÁREA DE TEXTO GRANDE: Campo de texto que permite escribir múltiples líneas, con 1 fila y 10 columnas -->
 <textarea name="comentarios" rows="1" cols="10"></textarea>
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- BOTÓN DE ENVÍO: Envía el formulario -->
 <input type="submit" value="enviar">
+<!-- BOTÓN DE RESETEO: Limpia el formulario -->
 <input type="reset" value="borrar">
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con textarea -->
 </form>
 
+<!-- COMENTARIO: Inicio de la cuarta sección con checkboxes -->
 <!-- FORMULARIO CON CHECKBOX: Cada checkbox representa una opción independiente, por lo que el usuario puede seleccionar varias al mismo tiempo. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la cuarta sección -->
 <h2>Formularios con checkbox</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
+<!-- TEXTO: Etiqueta visible para ingresar nombre -->
 Ingresa tu nombre:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre -->
 <input type="text" name="nombre">
 
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- TEXTO: Etiqueta visible indicando que seleccione lenguajes -->
 Selecciona los lenguajes que conozcas:
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- CHECKBOX JAVA: Casilla que permite seleccionar Java como una opción (se pueden marcar múltiples casillas) -->
 <input type="checkbox" name="Java">Java <br>
+<!-- CHECKBOX PYTHON: Casilla que permite seleccionar Python como una opción -->
 <input type="checkbox" name="Python"> Python <br>
+<!-- CHECKBOX C#: Casilla que permite seleccionar C# como una opción -->
 <input type="checkbox" name="C#">C# <br>
+<!-- CHECKBOX FLUTTER: Casilla que permite seleccionar Flutter como una opción -->
 <input type="checkbox" name="Flutter"> Flutter <br>
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con checkboxes -->
 </form>
 
+<!-- COMENTARIO: Inicio de la quinta sección con radio buttons -->
 <!-- FORMULARIO CON RADIO BUTTON: Los radio buttons funcionan como opciones excluyentes; solo una puede quedar seleccionada dentro del mismo grupo. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la quinta sección -->
 <h2>Formularios con Radioboton</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
+<!-- TEXTO: Etiqueta visible para ingresar nombre -->
 Ingresa tu nombre:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre -->
 <input type="text" name="nombre">
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- TEXTO: Etiqueta visible indicando que seleccione el máximo nivel de estudios -->
 Selecciona el maximo de estudios que tienes:
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- RADIO BUTTON SIN ESTUDIOS: Opción única del grupo "estudios" que tiene valor 1 -->
 <input type="radio" name="estudios" value="1">Sin estudios <br>
+<!-- RADIO BUTTON PRIMARIA: Opción única del grupo "estudios" que tiene valor 2 -->
 <input type="radio" name="estudios" value="2">Primaria <br>
+<!-- RADIO BUTTON SECUNDARIA: Opción única del grupo "estudios" que tiene valor 3 -->
 <input type="radio" name="estudios" value="3">Secundaria <br>
+<!-- RADIO BUTTON PREPARATORIA: Opción única del grupo "estudios" que tiene valor 4 -->
 <input type="radio" name="estudios" value="4">Preparatoria <br>
+<!-- BOTÓN DE ENVÍO: Envía el formulario -->
 <input type="submit" value="enviar">
+<!-- BOTÓN DE RESETEO: Limpia el formulario -->
 <input type="reset" value="borrar">
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con radio buttons -->
 </form>
 
+<!-- COMENTARIO: Inicio de la sexta sección con lista desplegable -->
 <!-- FORMULARIO CON SELECT: El select crea una lista desplegable con varias opciones. Es útil cuando se desea controlar las respuestas del usuario. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la sexta sección -->
 <h2>Formularios con seleccion</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
+<!-- TEXTO: Etiqueta visible para ingresar nombre -->
 Ingresa tu nombre:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre -->
 <input type="text" name="nombre">
 
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- TEXTO: Etiqueta visible indicando que seleccione un país -->
 Selecciona tu pais:
+<!-- ETIQUETA SELECT: Abre una lista desplegable con opciones de países -->
 <select name="pais">
+<!-- OPCIÓN 1: Primera opción de la lista con valor 1 -->
 <option value="1">Argentina</option>
+<!-- OPCIÓN 2: Segunda opción de la lista con valor 2 -->
 <option value="2">España</option>
+<!-- OPCIÓN 3: Tercera opción de la lista con valor 3 -->
 <option value="3">Mexico</option>
+<!-- OPCIÓN 4: Cuarta opción de la lista con valor 4 -->
 <option value="4">Guatemala</option>
+<!-- OPCIÓN 5: Quinta opción de la lista con valor 5 -->
 <option value="5">Honduras</option>
+<!-- OPCIÓN 6: Sexta opción de la lista con valor 6 -->
 <option value="6">El Salvador</option>
+<!-- OPCIÓN 7: Séptima opción de la lista con valor 7 -->
 <option value="7">Venezuela</option>
+<!-- OPCIÓN 8: Octava opción de la lista con valor 8 -->
 <option value="8">Colombia</option>
+<!-- CIERRE DEL SELECT: Termina la lista desplegable -->
 </select>
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- BOTÓN DE ENVÍO: Envía el formulario -->
 <input type="submit" value="enviar">
+<!-- BOTÓN DE RESETEO: Limpia el formulario -->
 <input type="reset" value="borrar">
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con select -->
 </form>
 
-<!-- FORMULARIO CON BOTONES: Aquí se utilizan elementos <button> con tipo submit y reset para enviar o limpiar la información. -->
+<!-- COMENTARIO: Inicio de la séptima sección con botones personalizados -->
+<!-- FORMULARIO CON BOTONES: Aquí se utilizan elementos button con tipo submit y reset para enviar o limpiar la información. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la séptima sección -->
 <h2>Formulario con botones</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
+<!-- TEXTO: Etiqueta visible para ingresar nombre -->
 Ingresa tu nombre:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre -->
 <input type="text" name="nombre">
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- BOTÓN SUBMIT PERSONALIZADO: Botón de envío con icono de avión incluido dentro de la etiqueta i -->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!-- BOTÓN RESET PERSONALIZADO: Botón de reseteo con icono de basura incluido dentro de la etiqueta i -->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con botones -->
 </form>
 
+<!-- COMENTARIO: Inicio de la octava sección con carga de archivos -->
 <!-- FORMULARIO CON ARCHIVOS: El input type="file" permite adjuntar documentos o imágenes desde el equipo del usuario. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la octava sección -->
 <h2>Formulario con archivos</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
 
+<!-- TEXTO: Etiqueta visible para ingresar nombre -->
 Ingresa tu nombre:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre -->
 <input type="text" name="nombre">
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- CAMPO DE ARCHIVO: Permite al usuario seleccionar un archivo de su computadora para subirlo -->
 <input type="file" name="archivo">
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- BOTÓN SUBMIT PERSONALIZADO: Botón de envío con icono de avión -->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!-- BOTÓN RESET PERSONALIZADO: Botón de reseteo con icono de basura -->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con carga de archivos -->
 </form>
 
+<!-- COMENTARIO: Inicio de la novena sección con campos ocultos -->
 <!-- FORMULARIO CON CAMPOS OCULTOS: Los campos ocultos no aparecen en la interfaz, pero se envían junto con el formulario para enviar información interna. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la novena sección -->
 <h2>Formulario con campos ocultos</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
+<!-- CAMPO OCULTO: Este campo no se ve en la página, pero se envía con el formulario con la hora como valor -->
 <input type="hidden" name="hora" value="3:30">
+<!-- TEXTO: Etiqueta visible para ingresar nombre -->
 Ingresa tu nombre:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre -->
 <input type="text" name="nombre">
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- BOTÓN SUBMIT PERSONALIZADO: Botón de envío con icono de avión -->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!-- BOTÓN RESET PERSONALIZADO: Botón de reseteo con icono de basura -->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con campos ocultos -->
 </form>
 
+<!-- COMENTARIO: Inicio de la décima sección con agrupamiento de campos -->
 <!-- FORMULARIO CON AGRUPAMIENTO: fieldset y legend sirven para agrupar campos relacionados y mejorar la organización visual del formulario. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la décima sección -->
 <h2>Formularios con agrupamiento</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
+<!-- FIELDSET: Agrupa campos relacionados dentro de una caja visual -->
 <fieldset>
+<!-- LEGEND: Título de la caja de agrupamiento que se muestra en el borde superior -->
 <legend>Datos personales</legend>
+<!-- TEXTO: Etiqueta visible para ingresar nombre y apellido -->
 Nombre y apellido:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre completo -->
 <input type="text" name="nombre_apellido"><br>
+<!-- TEXTO: Etiqueta visible para cargar un documento -->
 Documento valido:
+<!-- CAMPO DE ARCHIVO: Permite seleccionar un archivo de documento -->
 <input type="file" name="documento"><br>
+<!-- TEXTO: Etiqueta visible para seleccionar fecha de nacimiento -->
 Fecha de nacimiento:
 
+<!-- CAMPO DE FECHA: Permite seleccionar una fecha del calendario -->
 <input type="date" name="fecha_nacimiento">
+<!-- CIERRE DEL PRIMER FIELDSET: Termina el agrupamiento de datos personales -->
 </fieldset>
+<!-- FIELDSET: Agrupa campos relacionados con educación dentro de una caja visual -->
 <fieldset>
+<!-- LEGEND: Título del segundo agrupamiento -->
 <legend>Datos de estudio:</legend>
+<!-- TEXTO: Etiqueta visible para ingresar nombre de escuela -->
 Nombre de la escuela:
+<!-- CAMPO DE TEXTO: Input para escribir el nombre de la escuela -->
 <input type="text" name="escuela"><br>
+<!-- TEXTO: Etiqueta visible para cargar un certificado -->
 Certificado valido:
+<!-- CAMPO DE ARCHIVO: Permite seleccionar el archivo del certificado -->
 <input type="file" name="certificado"><br>
+<!-- TEXTO: Etiqueta visible para seleccionar fecha de egreso -->
 Fecha de egreso:
+<!-- CAMPO DE FECHA: Permite seleccionar la fecha de egreso -->
 <input type="date" name="fecha_egreso">
+<!-- CIERRE DEL SEGUNDO FIELDSET: Termina el agrupamiento de datos de estudio -->
 </fieldset>
+<!-- SALTO DE LÍNEA: Espacio visual -->
 <br>
+<!-- BOTÓN SUBMIT PERSONALIZADO: Botón de envío con icono de avión -->
 <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
+<!-- BOTÓN RESET PERSONALIZADO: Botón de reseteo con icono de basura -->
 <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con agrupamiento -->
 </form>
 
+<!-- COMENTARIO: Inicio de la undécima sección con limitaciones -->
 <!-- FORMULARIO CON LIMITACIONES: Aquí se muestran atributos como disabled, maxlength y readonly para restringir o controlar la edición del contenido. -->
+<!-- ENCABEZADO SECUNDARIO: Título de la undécima sección -->
 <h2>Formulario con limitaciones</h2>
+<!-- ETIQUETA FORM: Abre un nuevo formulario -->
 <form action="" method="post">
+<!-- TEXTO: Etiqueta visible para ingresar nombre -->
 Ingresa tu nombre:
+<!-- COMENTARIO INTERNO: Nota que explica que el siguiente campo está deshabilitado -->
 <!-- Desahbilitacion de campo -->
+<!-- CAMPO DESHABILITADO: Este input está bloqueado y el usuario no puede escribir en él -->
 <input type="text" name="nombre" disabled><br>
+<!-- COMENTARIO INTERNO: Nota que explica la limitación de caracteres en el siguiente campo -->
 <!-- Limitacion de caracteres -->
+<!-- TEXTO: Etiqueta visible para ingresar contraseña -->
 Contraseña:
+<!-- CAMPO DE CONTRASEÑA CON LÍMITE: Este input solo acepta un máximo de 5 caracteres -->
 <input type="password" name="pass" maxlength="5"><br>
+<!-- COMENTARIO INTERNO: Nota que explica que el siguiente campo es de solo lectura -->
 <!-- Solo lectura -->
+<!-- TEXTO: Etiqueta visible para ver comentarios -->
 Comentarios:
+<!-- ÁREA DE TEXTO DE SOLO LECTURA: Este textarea contiene texto que el usuario no puede modificar, solo puede leer -->
 <textarea name="comentarios" readonly>
 
 Este es mi comentario y no se puede borrar
 </textarea><br>
+<!-- CIERRE DEL FORMULARIO: Termina el formulario con limitaciones -->
 </form>
 
+<!-- COMENTARIO: Bloque final que marca la identificación del alumno dentro del documento -->
 <!-- Este bloque final sirve como marca de identificación del alumno dentro del documento. -->
 
+<!-- CIERRE DE LA SECCIÓN BODY: Termina toda la parte visible de la página -->
 </body>
+<!-- CIERRE DEL DOCUMENTO HTML: Termina completamente el documento -->
 </html>
